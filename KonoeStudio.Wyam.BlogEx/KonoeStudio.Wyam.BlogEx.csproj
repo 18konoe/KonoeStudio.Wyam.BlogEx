@@ -2,6 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <DevelopmentDependency>true</DevelopmentDependency>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Company>Konoe Studio</Company>
+    <Authors>Juhachi Konoe</Authors>
+    <Copyright>Copyright © Juhachi Konoe 2020</Copyright>
+    <Description>Enhanced Blog recipe for Wyam</Description>
+    <PackageProjectUrl>https://github.com/18konoe/KonoeStudio.Wyam.BlogEx</PackageProjectUrl>
+    <PackageTags>HID</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <RepositoryUrl>https://github.com/18konoe/KonoeStudio.Wyam.BlogEx</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <Version>0.1.0</Version>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,11 +32,13 @@
     <PackageReference Include="Wyam.Yaml" Version="2.2.9" />
     <PackageReference Include="Wyam.Web" Version="2.2.9" />
     <PackageReference Include="Wyam.Core" Version="2.2.9" />
+    <PackageReference Include="Wyam.Common" Version="2.2.9" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Wyam.Common">
       <HintPath>Lib\Wyam.Common.dll</HintPath>
+      <PrivateAssets>all</PrivateAssets>
     </Reference>
   </ItemGroup>
 
