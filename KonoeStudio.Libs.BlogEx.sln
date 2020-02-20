@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonoeStudio.Libs.BlogEx", "KonoeStudio.Libs.BlogEx\KonoeStudio.Libs.BlogEx.csproj", "{9ACE9C63-61C9-4FBD-A9A8-1EACB91F285A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9ACE9C63-61C9-4FBD-A9A8-1EACB91F285A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ACE9C63-61C9-4FBD-A9A8-1EACB91F285A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ACE9C63-61C9-4FBD-A9A8-1EACB91F285A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ACE9C63-61C9-4FBD-A9A8-1EACB91F285A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B61C172-6E63-4A88-BEC6-CEF31D943171}
+	EndGlobalSection
+EndGlobal
