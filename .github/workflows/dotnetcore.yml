@@ -19,4 +19,4 @@ jobs:
       uses: actions/upload-artifact@v1.0.0
       with:
         name: Output Packages
-        path: bin/Release
+        path: KonoeStudio.Wyam.BlogEx/bin/Release
