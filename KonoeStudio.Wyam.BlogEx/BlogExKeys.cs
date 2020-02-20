@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Wyam.Common.IO;
 using Wyam.Core.Modules.IO;
 
-namespace Wyam.BlogEx
+namespace KonoeStudio.Wyam.BlogEx
 {
     /// <summary>
     /// Metadata keys used by the blog recipe.

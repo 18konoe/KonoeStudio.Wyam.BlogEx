@@ -1,2 +1,2 @@
-# KonoeStudio.Libs.BlogEx
+# KonoeStudio.Wyam.BlogEx
 Enhanced Blog recipe for Wyam

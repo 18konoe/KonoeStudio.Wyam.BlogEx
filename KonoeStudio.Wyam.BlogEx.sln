@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KonoeStudio.Libs.BlogEx", "KonoeStudio.Libs.BlogEx\KonoeStudio.Libs.BlogEx.csproj", "{9ACE9C63-61C9-4FBD-A9A8-1EACB91F285A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KonoeStudio.Wyam.BlogEx", "KonoeStudio.Wyam.BlogEx\KonoeStudio.Wyam.BlogEx.csproj", "{79B3E630-4B28-4E51-AF23-6E13BEA0D8F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9ACE9C63-61C9-4FBD-A9A8-1EACB91F285A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9ACE9C63-61C9-4FBD-A9A8-1EACB91F285A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9ACE9C63-61C9-4FBD-A9A8-1EACB91F285A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9ACE9C63-61C9-4FBD-A9A8-1EACB91F285A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B3E630-4B28-4E51-AF23-6E13BEA0D8F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B3E630-4B28-4E51-AF23-6E13BEA0D8F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B3E630-4B28-4E51-AF23-6E13BEA0D8F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B3E630-4B28-4E51-AF23-6E13BEA0D8F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,15 +9,17 @@ using Wyam.Common.Modules;
 using Wyam.Core.Modules.Contents;
 using Wyam.Core.Modules.Control;
 using Wyam.Core.Modules.IO;
+using Wyam.Razor;
+using Wyam.Yaml;
 
-namespace Wyam.BlogEx.Pipelines
+namespace KonoeStudio.Wyam.BlogEx.Pipelines
 {
     /// <summary>
     /// Generates the tag index.
     /// </summary>
-    public class TagIndex : Pipeline
+    public class CategoryIndex : Pipeline
     {
-        internal TagIndex()
+        internal CategoryIndex()
             : base(GetModules())
         {
         }
@@ -25,16 +27,16 @@ namespace Wyam.BlogEx.Pipelines
         private static IModuleList GetModules() => new ModuleList
         {
             new If(
-                ctx => ctx.Documents[BlogEx.Tags].Any(),
-                new ReadFiles("_Tags.cshtml"),
+                ctx => ctx.Documents[BlogEx.Categories].Any(),
+                new ReadFiles("_Categories.cshtml"),
                 new FrontMatter(
-                    new Yaml.Yaml()),
+                    new Yaml()),
                 new Shortcodes(true),
-                new Razor.Razor()
+                new Razor()
                     .IgnorePrefix(null)
                     .WithLayout("/_Layout.cshtml"),
                 new Shortcodes(false),
-                new WriteFiles((doc, ctx) => "tags/index.html"))
+                new WriteFiles((doc, ctx) => "categories/index.html"))
             .WithoutUnmatchedDocuments()
         };
     }

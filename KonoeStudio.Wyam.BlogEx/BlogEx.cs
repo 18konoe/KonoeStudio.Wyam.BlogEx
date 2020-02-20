@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Wyam.BlogEx.Pipelines;
+using KonoeStudio.Wyam.BlogEx.Pipelines;
 using Wyam.Common.Configuration;
 using Wyam.Common.Documents;
 using Wyam.Common.Execution;
@@ -18,8 +18,9 @@ using Wyam.Core.Modules.IO;
 using Wyam.Core.Modules.Metadata;
 using Wyam.Feeds;
 using Wyam.Web.Pipelines;
+using Sitemap = Wyam.Web.Pipelines.Sitemap;
 
-namespace Wyam.BlogEx
+namespace KonoeStudio.Wyam.BlogEx
 {
     /// <summary>
     /// A recipe for creating blogging websites.
@@ -179,7 +180,7 @@ namespace Wyam.BlogEx
 
         /// <inheritdoc cref="Web.Pipelines.Feeds" />
         [SourceInfo]
-        public static Web.Pipelines.Feeds Feed { get; } = new Web.Pipelines.Feeds(
+        public static Feeds Feed { get; } = new Feeds(
             nameof(Feed),
             new FeedsSettings
             {
@@ -223,11 +224,11 @@ namespace Wyam.BlogEx
 
         /// <inheritdoc cref="Web.Pipelines.Less" />
         [SourceInfo]
-        public static Web.Pipelines.Less Less { get; } = new Web.Pipelines.Less(nameof(Less));
+        public static Less Less { get; } = new Less(nameof(Less));
 
         /// <inheritdoc cref="Web.Pipelines.Sass" />
         [SourceInfo]
-        public static Web.Pipelines.Sass Sass { get; } = new Web.Pipelines.Sass(nameof(Sass));
+        public static Sass Sass { get; } = new Sass(nameof(Sass));
 
         /// <inheritdoc cref="Web.Pipelines.Resources" />
         [SourceInfo]
@@ -247,7 +248,7 @@ namespace Wyam.BlogEx
 
         /// <inheritdoc cref="Web.Pipelines.Sitemap" />
         [SourceInfo]
-        public static Web.Pipelines.Sitemap Sitemap { get; } = new Web.Pipelines.Sitemap(nameof(Sitemap));
+        public static Sitemap Sitemap { get; } = new Sitemap(nameof(Sitemap));
 
         /// <inheritdoc/>
         public override void Apply(IEngine engine)
